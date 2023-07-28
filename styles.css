@@ -1,0 +1,32 @@
+html {
+  display: block;
+}
+
+body{
+  padding-left: 20px;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #F0EEE3;
+  color: #2A4765;
+
+}
+
+h1 {
+  display: block;
+  text-align:center;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+tbody { 
+  display: table-row-group;
+  vertical-align: middle; 
+  border-top-color: inherit;
+  border-right-color: inherit;
+  border-bottom-color: inherit;
+  border-left-color: inherit;
+}
