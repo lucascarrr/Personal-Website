@@ -7,13 +7,17 @@
   --color-link-hover: #fa7921;
 }
 
+a {
+  color: #5d6c80;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 20px;
-  max-width: 1000px;
-  margin-left: 25%;
-  margin-right: 25%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5%;
 }
 
@@ -28,7 +32,8 @@ header {
 }
 
 .text-content {
-  max-width: 60%; /* Adjust the percentage as needed */
+  max-width: 80%; /* Adjust the percentage as needed */
+  margin: 0 0; /* Center the text content horizontally */
 }
 
 header h1 {
