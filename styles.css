@@ -32,12 +32,12 @@ header {
 }
 
 .text-content {
-  max-width: 80%; /* Adjust the percentage as needed */
+  max-width: 70%; /* Adjust the percentage as needed */
   margin: 0 0; /* Center the text content horizontally */
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 0px;
 }
 
@@ -54,6 +54,7 @@ header p.small {
 }
 
 header img {
+  margin-top: 55px;
   width: 140px;
   height: 140px;
   border-radius: 15%;
