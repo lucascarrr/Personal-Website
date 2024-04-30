@@ -42,13 +42,13 @@ header h1 {
 }
 
 header p {
-  font-size: 13px;
+  font-size: 14px;
   color: #40404b;
   margin-bottom: -10px;
 }
 
 header p.small {
-  font-size: 12px;
+  font-size: 14px;
   color: #6e6e7a;
   margin-bottom: -10px;
 }
@@ -65,7 +65,7 @@ main section {
 }
 
 main section p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 main section h2 {
