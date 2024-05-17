@@ -1,14 +1,15 @@
 :root {
   --color-bg: #ffffff;
-  --color-fg: #282828;
-  --color-link: #282828;
-  --color-link-visited: #282828;
+  --color-fg: #222939
+  /*#282828;*/
+  --color-link #0D6EFD;
+  --color-link-visited: #0D6EFD;
   font-family: "Inter", sans-serif;
   --color-link-hover: #fa7921;
 }
 
 a {
-  color: #5d6c80;
+  color: #0D6EFD;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 20px;
   max-width: 700px;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-right: auto;
   margin-top: 1%;
 }
@@ -57,7 +58,7 @@ header img {
   margin-top: 55px;
   width: 140px;
   height: 140px;
-  border-radius: 15%;
+  border-radius:0%;
 }
 
 main section {
