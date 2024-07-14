@@ -1,23 +1,25 @@
 :root {
-  background-color: #eeecdd;
-  --color-fg: #222939 /*#282828;*/ --color-link #090088;
+  color: #292929;
+  background-color: #f6f3e9;
+  --color-fg: #222939;
+  --color-link: #090088;
   --color-link-visited: #090088;
-  font-family: "Inter", sans-serif;
   --color-link-hover: #090088;
+  font-family: "Inter", sans-serif;
 }
 
 a {
-  color: #090088;
+  color: var(--color-link);
 }
 
 body {
-  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 20px;
   max-width: 700px;
   margin-left: 50px;
   margin-right: auto;
   margin-top: 1%;
+  color: var(--color-fg);
 }
 
 header {
@@ -31,8 +33,8 @@ header {
 }
 
 .text-content {
-  max-width: 100%; /* Adjust the percentage as needed */
-  margin: 0 0; /* Center the text content horizontally */
+  max-width: 100%;
+  margin: 0;
 }
 
 header h1 {
