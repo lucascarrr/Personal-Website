@@ -1,10 +1,10 @@
 :root {
   color: #292929;
-  background-color: #e8dfd5;
-  --color-link: #090088;
-  --color-link-visited: #090088;
-  --color-link-hover: #090088;
-  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  /* --color-link: #090088; */
+  /* --color-link-visited: #090088; */
+  /* --color-link-hover: #090088; */
+  font-family: "Computer Modern Sans", sans-serif;
 }
 
 a {
@@ -31,7 +31,8 @@ header {
 }
 
 .text-content {
-  max-width: 100%;
+  max-width: 80%;
+  padding-right: 15px;
   margin: 0;
 }
 
@@ -41,34 +42,35 @@ header h1 {
 }
 
 header p {
-  font-size: 14px;
+  font-size: 15px;
   color: #40404b;
   margin-bottom: -10px;
 }
 
 header p.small {
-  font-size: 14px;
+  font-size: 15px;
   color: #6e6e7a;
   margin-bottom: -10px;
 }
 
 header img {
   margin-top: 55px;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 10px; /* This line rounds the corners */
 }
 
 main section {
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 main section p {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 main section h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
