@@ -1,10 +1,23 @@
 :root {
   color: #292929;
-  background-color: #ffffff;
-  /* --color-link: #090088; */
+  background-color:#ffffff;
+  --color-link: #090088;
   /* --color-link-visited: #090088; */
   /* --color-link-hover: #090088; */
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: 'LinBiolinum', 'sans-serif' !important;
+}
+@font-face {
+    font-family: 'LinBiolinum';
+    src: url('./Fonts/LinBiolinum_R.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LinBiolinum';
+    src: url('./Fonts/LinBiolinum_RB.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 a {
@@ -14,7 +27,7 @@ a {
 body {
   margin: 0;
   padding: 20px;
-  max-width: 700px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1%;
@@ -37,18 +50,18 @@ header {
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 0px;
 }
 
 header p {
-  font-size: 15px;
+  font-size: 20px;
   color: #40404b;
   margin-bottom: -10px;
 }
 
 header p.small {
-  font-size: 15px;
+  font-size: 20px;
   color: #6e6e7a;
   margin-bottom: -10px;
 }
@@ -66,7 +79,7 @@ main section {
 }
 
 main section p {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 main section h2 {
