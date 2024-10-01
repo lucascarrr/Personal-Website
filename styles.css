@@ -90,3 +90,7 @@ main section h2 {
 #about {
   padding-top: 5%;
 }
+
+main section links {
+  padding-left: 100px;
+}
