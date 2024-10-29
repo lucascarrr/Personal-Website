@@ -1,14 +1,15 @@
 :root {
   color: #292929;
   background-color:#ffffff;
+  background-color: #F6F2EE;
   --color-link: #090088;
   /* --color-link-visited: #090088; */
   /* --color-link-hover: #090088; */
-  font-family: 'LinBiolinum', 'sans-serif' !important;
+  font-family: 'Gulliver', 'sans-serif' !important;
 }
-/* @font-face {
-    font-family: 'LinBiolinum';
-    src: url('./Fonts/LinBiolinum_R.otf') format('opentype');
+@font-face {
+    font-family: 'Gulliver';
+    src: url('./Fonts/Gulliver Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -55,13 +56,13 @@ header h1 {
 }
 
 header p {
-  font-size: 16px;
+  font-size: 14px;
   color: #40404b;
   margin-bottom: -10px;
 }
 
 header p.small {
-  font-size: 16px;
+  font-size: 14px;
   color: #6e6e7a;
   margin-bottom: -10px;
 }
@@ -79,11 +80,11 @@ main section {
 }
 
 main section p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 main section h2 {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
