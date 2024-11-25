@@ -5,11 +5,18 @@
   --color-link: #090088;
   /* --color-link-visited: #090088; */
   /* --color-link-hover: #090088; */
-  font-family: 'Gulliver', 'sans-serif' !important;
+  font-family: 'Equity', 'sans-serif' !important;
 }
 @font-face {
     font-family: 'Gulliver';
     src: url('./Fonts/Gulliver Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Equity';
+    src: url('./Fonts/Equity\ Text\ A.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
