@@ -1,5 +1,5 @@
 :root {
-  background-color: #D6D0C8;
+  background-color: #ffffff;
   color: #302a27;
   font-family: 'Equity', 'sans-serif' !important;
 }
@@ -55,7 +55,7 @@ p {
 }
 
 a {
-  color: #302a27;
+  color: #291bc6;
   font-size: 16px;
   text-decoration: none;
 }
