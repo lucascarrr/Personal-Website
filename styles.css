@@ -1,21 +1,12 @@
 :root {
   background-color: #ffffff;
   color: #302a27;
-  font-family: 'Equity', 'sans-serif' !important;
+  font-family: 'TX02Mono-Regular', 'sans-serif' !important;
 }
 
 @font-face {
-  font-family: 'Gulliver';
-  src: url('./Fonts/Gulliver Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Equity';
-  src: url('./Fonts/Equity\ Text\ A.ttf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'TX02Mono-Regular';
+  src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/e049dfb6-9c5d-4ac4-97c2-eb6e95c61d09.woff2') format('woff2');
 }
 
 body {
@@ -25,15 +16,13 @@ body {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 20px;
-
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 h3 {
@@ -62,65 +51,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Add responsive design for smaller screens */
-@media (max-width: 768px) {
-  body {
-    padding: 5%;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-  h3 {
-    font-size: 13px;
-  }
-
-  h4 {
-    font-size: 13px;
-  }
-
-  p {
-    font-size: 13px;
-  }
-
-  a {
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 3%;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  h2 {
-    font-size: 14px;
-  }
-
-  h3 {
-    font-size: 12px;
-  }
-
-  h4 {
-    font-size: 12px;
-  }
-
-  p {
-    font-size: 12px;
-  }
-
-  a {
-    font-size: 12px;
-  }
 }
