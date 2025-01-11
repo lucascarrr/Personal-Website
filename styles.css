@@ -39,8 +39,11 @@ body {
 }
 
 header {
-  background-color: blue;
   color: #EEE;
+}
+
+header .table {
+  background-color: blue;
 }
 
 main {
@@ -112,6 +115,21 @@ div.container {
 .table td {
   padding: .3rem .6rem .3rem;
   border-bottom: .1rem solid #bfbfbf;
+}
+
+.table blue {
+  font-weight: 600;
+  padding: .3rem .6rem .3rem;
+  border-bottom: .1rem solid blue;
+  border-bottom: 0 solid blue;
+}
+
+.blue th {
+  border: .1rem solid blue;
+}
+
+.blue td {
+  border: .1rem solid blue!important;
 }
 
 .bg-light-gray {
