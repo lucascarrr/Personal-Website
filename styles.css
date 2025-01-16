@@ -21,12 +21,17 @@
 :root {
   background-color: #ffffff;
   color: #302a27;
-  font-family: Univers,-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
-  padding-left: 1%;
-  vertical-align: baseline;
+  font-family: Univers, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  
+  /* Center everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Prevent default body margin */
 }
+
 
 body {
   font-family: Univers,-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
@@ -51,6 +56,10 @@ main {
   max-width: 60em;
 }
 
+div.container .img {
+  width: 30%;
+}
+
 .columns {
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +78,7 @@ div.flex-measure-36 {
 }
 
 .bottom-5 {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 .column {
