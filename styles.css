@@ -2,27 +2,38 @@
   font-family: 'TX02Mono-Regular';
   src: url('https://intdev-global.s3.us-west-2.amazonaws.com/public/internet-dev/e049dfb6-9c5d-4ac4-97c2-eb6e95c61d09.woff2') format('woff2');
 }
-
 @font-face {
-  font-family: 'Geist-Mono';
-  src: url("Fonts/GeistMono-Regular.otf");
+  font-family: 'Diatype';
+  src: url('Fonts/Diatype/ABCDiatype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gulliver';
-  src: url("Fonts/Gulliver\ Regular.otf");
+  font-family: 'Diatype';
+  src: url('Fonts/Diatype/ABCDiatype-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Equity';
-  src: url("Fonts/Equity\ Text\ A.ttf");
+  font-family: 'Diatype';
+  src: url('Fonts/Diatype/ABCDiatype-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Diatype';
+  src: url('Fonts/Diatype/ABCDiatype-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
 :root {
   background-color: #ffffff;
   color: #302a27;
   font-family: Univers, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+  font-size: 13pt;
   font-weight: 500;
   
   /* Center everything */
@@ -34,11 +45,10 @@
 
 
 body {
-  font-family: Univers,-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  /* font-family: Univers,-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif; */
   /* font-family: "TX02Mono-Regular"; */
-  font-size: .8rem;
-  font-weight: 450;
-  font-stretch: 95%;
+  font-family: "Diatype";
+  font-size: 10pt;
   color: #000;
   text-rendering: optimizeLegibility;
 }
@@ -91,7 +101,8 @@ div.flex-measure-36 {
 
 
 h2 {
-  font-size: 1em;
+  font-family: 'Diatype', sans-serif;
+  font-weight: bold;
 }
 
 div.container {
