@@ -52,11 +52,25 @@ lucas\@airu.org.za |
 
 Bachelor of Computer Science & Philosophy #h(1fr) 2019 -- 2022 \
 - _with distinction in Computer Science, distinction in Philosophy, and distinction overall_ #h(1fr)  GPA. $74.63$\
-
+#line(
+  length:100%,
+  stroke:(
+    paint:gray,
+    thickness: 1pt,
+    dash:"loosely-dashed"
+  )
+)
 Bachelor of Science (Hons) in Computer Science #h(1fr) 2023 -- 2024 \
 - _with distinction_ #h(1fr)  GPA. $81.25$ \
 - _Topic: Deep Learning Classification for Encrypted Botnet Traffic_ \ 
-
+#line(
+  length:100%,
+  stroke:(
+    paint:gray,
+    thickness: 1pt,
+    dash:"loosely-dashed"
+  )
+)
 Master of Science in Computer Science #h(1fr) 2024 -- present \
 - _Topic: Investigating non-monotonic reasoning in Formal Concept Analysis_ \
 
@@ -66,7 +80,7 @@ Master of Science in Computer Science #h(1fr) 2024 -- present \
 === University of Cape Town 
 - Introduction to programming (Lecturer) #h(1fr) 2024, 25 \
 - C++ and Machine Learning (Teaching Assistant) #h(1fr) 2024 \ 
-- Network and Internet Security (Teaching Assitant) #h(1fr) 2024, 25 \
+- Network and Internet Security (Teaching Assistant) #h(1fr) 2024, 25 \
 
 == Awards 
 #chiline()
