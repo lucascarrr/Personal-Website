@@ -1,159 +1,158 @@
 @font-face {
-  font-family: "Diatype";
-  src: url("Fonts/Diatype/ABCDiatype-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Diatype";
+    src: url("Fonts/Diatype/ABCDiatype-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Diatype";
-  src: url("Fonts/Diatype/ABCDiatype-Heavy.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Diatype";
+    src: url("Fonts/Diatype/ABCDiatype-Heavy.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 .cormorant-garamond {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/969699/lato-latin-400.woff');
+    font-family: "Lato";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/969699/lato-latin-400.woff");
 }
 
 :root {
-  background-color: #0000a4;
-  color: cornsilk;
-  font-family: "Diatype", sans-serif;
-  font-optical-sizing: auto;
+    --blue: #0000a4;
+    background-color: var(--white);
+    /* color: var(--blue); */
+    /* font-family: "Cormorant Garamond"; */
+    font-optical-sizing: auto;
 }
 
 span {
-  display: block;
-  text-indent: 20px;
+    display: block;
+    text-indent: 20px;
 }
 
 span samp {
-  display: block;
-  text-indent: 34px;
-  font-family: initial;
+    display: block;
+    text-indent: 34px;
+    font-family: initial;
 }
 
 body {
-  margin: 0;
-  font-weight: 400;
-  font-size: 11pt;
-  margin-left: 5%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 11pt;
+    margin-left: 5%;
 }
 
 h1 {
-  font-family: "Diatype", sans-serif;
-  font-weight: bold;
-  margin-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 header {
-  margin-top: 5%;
-  margin-bottom: 1em;
+    margin-top: 5%;
+    margin-bottom: 1em;
 }
 
 main {
-  width: 100%;
-  max-width: 50em;
+    width: 100%;
+    max-width: 50em;
 }
 
 main h1 {
-  font-size: 13pt;
+    font-size: 13pt;
 }
 
 a {
-  text-decoration: none;
-  color: cornsilk;
+    text-decoration: none;
+    color: var(--blue);
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .top {
-  display: flex;
-  padding-bottom: 2em;
-  flex-wrap: wrap;
-  /* allow columns to wrap on narrow screens */
+    display: flex;
+    padding-bottom: 2em;
+    flex-wrap: wrap;
+    /* allow columns to wrap on narrow screens */
 }
 
 .top p {
-  padding-right: 1rem;
+    padding-right: 1rem;
 }
 
 .information {
-  width: fit-content;
+    width: fit-content;
 }
 
-
 .information a {
-  display: block;
-  margin-bottom: 0.25rem;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 .education {
-  margin-left: 5em;
-  flex-direction: row;
+    margin-left: 5em;
+    flex-direction: row;
 }
 
 .education table {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .columns {
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
-  max-width: 100%;
-  padding-right: 0.4rem;
-  padding-left: 0.4rem;
-  -ms-flex: 1;
-  flex: 1;
+    max-width: 100%;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .table {
-  border-collapse: collapse;
-  text-align: left;
-  width: 100%;
-  /* let tables shrink to fit phones */
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    /* let tables shrink to fit phones */
 }
 
 .table th {
-  max-height: 1em;
+    max-height: 1em;
 }
 
 .table td {
-  padding-left: 0;
-  padding-right: 1em;
+    padding-left: 0;
+    padding-right: 1em;
 }
 
 /* Small‑screen adjustments */
 @media (max-width: 600px) {
-  body {
-    margin-left: 2%;
-    font-size: 10pt;
-    /* slightly smaller default text */
-  }
+    body {
+        margin-left: 2%;
+        font-size: 10pt;
+        /* slightly smaller default text */
+    }
 
-  .education {
-    margin-left: 0;
-    /* avoid horizontal scroll on phones */
-    margin-top: 1em;
-  }
+    .education {
+        margin-left: 0;
+        /* avoid horizontal scroll on phones */
+        margin-top: 1em;
+    }
 
-  .table td {
-    padding-right: 0.5em;
-    /* tighten table cells */
-  }
+    .table td {
+        padding-right: 0.5em;
+        /* tighten table cells */
+    }
 }
