@@ -58,6 +58,21 @@ h1 {
 header {
     margin-top: 5%;
     margin-bottom: 1em;
+    display: flex;
+}
+
+header img {
+    max-width: 15%;
+}
+
+#header_text {
+    margin-top: -1em;
+    margin-left: 2em;
+}
+
+.information h1 {
+    font-size: 14pt;
+    margin-bottom: 0.5em;
 }
 
 main {
@@ -80,7 +95,7 @@ a:hover {
 
 .top {
     display: flex;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     flex-wrap: wrap;
     /* allow columns to wrap on narrow screens */
 }
@@ -99,7 +114,7 @@ a:hover {
 }
 
 .education {
-    margin-left: 5em;
+    /* margin-left: 5em; */
     flex-direction: row;
 }
 
