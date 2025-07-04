@@ -12,23 +12,11 @@
   font-style: normal;
 }
 
-.cormorant-garamond {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/969699/lato-latin-400.woff");
-}
-
 :root {
   --blue: #0000a4;
   background-color: var(--white);
   /* color: var(--blue); */
-  /* font-family: "Cormorant Garamond"; */
+  font-family: "Diatype";
   font-optical-sizing: auto;
 }
 
