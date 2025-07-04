@@ -14,9 +14,10 @@
 
 :root {
   --blue: #0000a4;
-  background-color: var(--white);
-  /* color: var(--blue); */
+  background-color: var(--blue);
+  color: white;
   font-family: "Diatype";
+  text-align: justify;
   font-optical-sizing: auto;
 }
 
@@ -51,11 +52,11 @@ header {
 }
 
 header img {
-  max-width: 35%;
+  max-width: 25%;
 }
 
 #header_text {
-  margin-top: -1em;
+  margin-top: -1.5em;
   margin-left: 2em;
 }
 
@@ -75,7 +76,7 @@ main h1 {
 
 a {
   text-decoration: none;
-  color: var(--blue);
+  color: white;
 }
 
 a:hover {
