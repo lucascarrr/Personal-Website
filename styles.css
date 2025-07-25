@@ -12,6 +12,8 @@
   font-style: normal;
 }
 
+
+
 :root {
   --blue: #0000a4;
   background-color: var(--blue);
@@ -19,6 +21,18 @@
   font-family: "Diatype";
   text-align: justify;
   font-optical-sizing: auto;
+}
+
+::selection {
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: white;
+    color: black;
+    text-shadow: none;
 }
 
 span {
