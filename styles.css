@@ -33,6 +33,12 @@
     text-shadow: none;
 }
 
+::-webkit-selection {
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
 span {
     display: block;
     text-indent: 20px;
