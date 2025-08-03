@@ -1,26 +1,24 @@
 @font-face {
-  font-family: "Diatype";
-  src: url("Fonts/Diatype/ABCDiatype-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Diatype";
+    src: url("Fonts/Diatype/ABCDiatype-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "Diatype";
-  src: url("Fonts/Diatype/ABCDiatype-Heavy.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    font-family: "Diatype";
+    src: url("Fonts/Diatype/ABCDiatype-Heavy.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
-
-
 :root {
-  --blue: #0000a4;
-  background-color: var(--blue);
-  color: white;
-  font-family: "Diatype";
-  text-align: justify;
-  font-optical-sizing: auto;
+    --blue: #0000a4;
+    color: white;
+    background-color: var(--blue);
+    font-family: "Diatype";
+    text-align: justify;
+    font-optical-sizing: auto;
 }
 
 ::selection {
@@ -36,149 +34,135 @@
 }
 
 span {
-  display: block;
-  text-indent: 20px;
+    display: block;
+    text-indent: 20px;
 }
 
 span samp {
-  display: block;
-  text-indent: 34px;
-  font-family: initial;
+    display: block;
+    text-indent: 34px;
+    font-family: initial;
 }
 
 body {
-  margin: 0;
-  font-weight: 400;
-  font-size: 12pt;
-  margin-left: 5%;
-  margin-right: 5%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 12pt;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 h1 {
-  font-weight: bold;
-  margin-bottom: 0;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
 header {
-  margin-top: 5%;
-  margin-bottom: 1em;
-  display: flex;
-  max-width: 90%;
-  width: 50em;
+    margin-top: 5%;
+    margin-bottom: 1em;
+    display: flex;
+    max-width: 90%;
+    width: 50em;
 }
 
 header img {
-  width: 12vw;
-  height: 12vw;
-  object-fit: cover;
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
 }
 
 #header_text {
-  margin-top: -1.5em;
-  margin-left: 0em;
+    margin-top: -1.5em;
+    margin-left: 0em;
 }
 
-.information h1 {
-  font-size: 14pt;
+#top {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#information h1 {
+    font-size: 14pt;
+    margin-bottom: -0.5em;
+}
+
+#right {
+    padding-top: 2.75em;
+    margin-left: 1rlh;
+    display: flex;
+    flex-direction: column;
+}
+
+#right a {
+    margin-bottom: 0em;
+}
+
+#left p {
+    margin-bottom: 0em;
 }
 
 main {
-  width: 100%;
-  max-width: 50em;
+    width: 100%;
+    max-width: 50em;
 }
 
 main h1 {
-  font-size: 13pt;
+    font-size: 13pt;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.top {
-  display: flex;
-  padding-bottom: 1em;
-  flex-wrap: wrap;
-  /* allow columns to wrap on narrow screens */
-}
-
-.top p {
-  padding-right: 1rem;
-}
-
-.information {
-  width: fit-content;
-}
-
-.information a {
-  display: block;
-  margin-bottom: 0.25rem;
+.block {
+    margin-bottom: 2em;
+    width: fit-content;
 }
 
 .education {
-  /* margin-left: 5em; */
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .education table {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 .columns {
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
-  max-width: 100%;
-  padding-right: 0.4rem;
-  padding-left: 0.4rem;
-  -ms-flex: 1;
-  flex: 1;
+    max-width: 100%;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .table {
-  border-collapse: collapse;
-  text-align: left;
-  width: 100%;
-  /* let tables shrink to fit phones */
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    /* let tables shrink to fit phones */
 }
 
 .table th {
-  max-height: 1em;
+    max-height: 1em;
 }
 
 .table td {
-  padding-left: 0;
-  padding-right: 1em;
-}
-
-/* Small‑screen adjustments */
-@media (max-width: 600px) {
-  body {
-    margin-left: 2%;
-    font-size: 10pt;
-    /* slightly smaller default text */
-  }
-
-  .education {
-    margin-left: 0;
-    /* avoid horizontal scroll on phones */
-    margin-top: 1em;
-  }
-
-  .table td {
-    padding-right: 0.5em;
-    /* tighten table cells */
-  }
+    padding-left: 0;
+    padding-right: 1em;
 }
 
 footer {
-  margin-top: 10vh;
+    margin-top: 10vh;
 }
