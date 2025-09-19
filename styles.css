@@ -69,21 +69,33 @@ header {
     display: flex;
     max-width: 90%;
     width: 50em;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-header img {
-    width: 12vw;
-    height: 12vw;
+#header_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    /* Adding some space between image and text */
+}
+
+#img img {
+    padding-top: 2em;
+    width: 5vw;
+    /* Adjust the size of the image */
+    height: 6vw;
+    /* Maintain aspect ratio */
     object-fit: cover;
+    /* Optional: makes the image round */
 }
 
 #header_text {
-    margin-top: -1.5em;
-    margin-left: 0em;
+    max-width: 70%;
 }
 
 #top {
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 }
@@ -140,7 +152,6 @@ a:hover {
 }
 
 .columns {
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
 }
@@ -149,7 +160,6 @@ a:hover {
     max-width: 100%;
     padding-right: 0.4rem;
     padding-left: 0.4rem;
-    -ms-flex: 1;
     flex: 1;
 }
 
@@ -157,7 +167,6 @@ a:hover {
     border-collapse: collapse;
     text-align: left;
     width: 100%;
-    /* let tables shrink to fit phones */
 }
 
 .table th {
