@@ -41,7 +41,7 @@ lucas\@airu.org.za |
 == Education
 #chiline()
 
-*University of Cape Town* \
+==== University of Cape Town \
 
 Bachelor of Computer Science & Philosophy #h(1fr) 2019 -- 2022 \
 - _with distinction in Computer Science, distinction in Philosophy, and distinction overall_ #h(1fr) \
