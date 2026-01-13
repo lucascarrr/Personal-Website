@@ -1,6 +1,6 @@
 :root {
     --blue: #0000a4;
-    --background-light: #FFF;
+    --background-light: #FFFF;
     --background-dark: var(--blue);
     --foreground-light: var(--blue);
     --foreground-dark: white;
