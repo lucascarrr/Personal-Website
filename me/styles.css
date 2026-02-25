@@ -1,0 +1,168 @@
+:root {
+    --blue: #0000a4;
+    --background-light: #FFF;
+    --background-dark: var(--blue);
+    --foreground-light: var(--blue);
+    --foreground-dark: white;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: var(--foreground-light);
+        background-color: var(--background-light);
+    }
+
+    ::selection {
+        background: var(--blue);
+        color: var(--background-light);
+        text-shadow: none;
+    }
+
+    .card {
+        border-color: rgba(0, 0, 164, 0.25);
+    }
+
+    .card:hover {
+        border-color: var(--blue);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: var(--foreground-dark);
+        background-color: var(--background-dark);
+    }
+
+    ::selection {
+        background: white;
+        color: var(--blue);
+        text-shadow: none;
+    }
+
+    .card {
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .card:hover {
+        border-color: white;
+    }
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+h1, h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    margin-top: 7%;
+    margin-bottom: 2em;
+}
+
+#header_content h1 {
+    margin-bottom: 0.1em;
+}
+
+#header_content h1 a:hover {
+    text-decoration: underline;
+}
+
+#header_content p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+main {
+    max-width: 52em;
+}
+
+.section {
+    margin-bottom: 2.5em;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0.75em;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    gap: 0.75em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 0.85em 1em;
+    border-radius: 4px;
+    transition: border-color 0.15s;
+    text-decoration: none;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0.4em;
+}
+
+.favicon {
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-desc {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.65;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 13px;
+    }
+
+    header {
+        margin-top: 10%;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}

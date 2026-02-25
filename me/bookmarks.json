@@ -1,0 +1,42 @@
+[
+  {
+    "category": "research",
+    "items": [
+      {
+        "title": "ArXiv",
+        "url": "https://arxiv.org",
+        "description": "Open-access preprints in CS, math, physics, and more"
+      },
+      {
+        "title": "Semantic Scholar",
+        "url": "https://www.semanticscholar.org",
+        "description": "AI-powered academic paper search"
+      }
+    ]
+  },
+  {
+    "category": "tools",
+    "items": [
+      {
+        "title": "Excalidraw",
+        "url": "https://excalidraw.com",
+        "description": "Virtual whiteboard for sketching diagrams"
+      },
+      {
+        "title": "Overleaf",
+        "url": "https://www.overleaf.com",
+        "description": "Online LaTeX editor"
+      }
+    ]
+  },
+  {
+    "category": "reading",
+    "items": [
+      {
+        "title": "Hacker News",
+        "url": "https://news.ycombinator.com",
+        "description": "Tech and startup news"
+      }
+    ]
+  }
+]

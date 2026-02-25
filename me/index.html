@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bookmarks — lucasc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div id="header_content">
+            <h1><a href="https://lucasc.net">Lucas Carr</a></h1>
+            <p>bookmarks</p>
+        </div>
+    </header>
+
+    <main id="bookmarks-container">
+        <!-- populated by script -->
+    </main>
+
+    <script>
+        fetch('bookmarks.json')
+            .then(r => r.json())
+            .then(data => {
+                const container = document.getElementById('bookmarks-container');
+                data.forEach(section => {
+                    const sec = document.createElement('section');
+                    sec.className = 'section';
+
+                    const title = document.createElement('h2');
+                    title.className = 'section-title';
+                    title.textContent = section.category;
+                    sec.appendChild(title);
+
+                    const grid = document.createElement('div');
+                    grid.className = 'card-grid';
+
+                    section.items.forEach(item => {
+                        const card = document.createElement('a');
+                        card.className = 'card';
+                        card.href = item.url;
+                        card.target = '_blank';
+                        card.rel = 'noopener noreferrer';
+
+                        const domain = new URL(item.url).hostname;
+                        const favicon = `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+
+                        card.innerHTML = `
+                            <div class="card-top">
+                                <img class="favicon" src="${favicon}" alt="" width="16" height="16" onerror="this.style.display='none'">
+                                <span class="card-title">${item.title}</span>
+                            </div>
+                            <p class="card-desc">${item.description}</p>
+                        `;
+
+                        grid.appendChild(card);
+                    });
+
+                    sec.appendChild(grid);
+                    container.appendChild(sec);
+                });
+            });
+    </script>
+</body>
+
+</html>
