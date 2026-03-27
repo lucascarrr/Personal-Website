@@ -1,11 +1,13 @@
-#show heading: set text(font: "ABC Diatype")
+#show heading: set text(font: "SF Pro Text", weight: "semibold")
+#show heading.where(level: 2): set text(size: 12pt)
 
 #show link: underline
 
 // Uncomment the following lines to adjust the size of text
 // The recommend resume text size is from `10pt` to `12pt`
 #set text(
-  size: 10pt,
+  size: 9pt,
+  font: "SF Pro Text",
 )
 
 // Feel free to change the margin below to best fit your own CV
@@ -15,7 +17,7 @@
 
 #set par(justify: true)
 
-#let chiline() = { v(-3pt); line(length: 100%); v(-5pt) }
+#let chiline() = {}
 
 #let continuescvpage() = {
   place(bottom + center, dx: 0pt, // Horizontal offset (positive is rightward)
@@ -33,29 +35,28 @@
 // #continuescvpage()
 
 = Lucas Carr
-lucas\@airu.org.za |
+lucas.carr\@helsinki.fi |
 #link("https://github.com/lucascarrr")[github.com/lucascarrr] | #link("https://lucasc.net")[lucasc.net] #h(1fr) Department of Computer Science,\
-#h(1fr) University of Cape Town \
-#h(1fr) Cape Town, South Africa
+#h(1fr) University of Helsinki \
+#h(1fr) Helsinki, Finland
 
 == Education
 #chiline()
+==== University of Helsinki \
+Doctor of Philosophy in Computer Science #h(1fr) 2026 -- present \
 
 ==== University of Cape Town \
+Master of Science in Computer Science #h(1fr) 2024 -- 2025 \
+Bachelor of Science (Hons) in Computer Science (distinction) #h(1fr) 2023 -- 2024 \
+Bachelor of Computer Science & Philosophy (distinction) #h(1fr) 2019 -- 2022 \
 
-Bachelor of Computer Science & Philosophy #h(1fr) 2019 -- 2022 \
-- _with distinction in Computer Science, distinction in Philosophy, and distinction overall_ #h(1fr) \
-
-Bachelor of Science (Hons) in Computer Science #h(1fr) 2023 -- 2024 \
-- _with distinction_ #h(1fr)\
-- _Topic: Deep Learning Classification for Encrypted Botnet Traffic_ \
-
-Master of Science in Computer Science #h(1fr) 2024 -- present \
-- _Topic: Investigating non-monotonic reasoning in Formal Concept Analysis_ \
+== Research Stays
+#chiline()
+Technische Universität Dresden #h(1fr) 2025 (3 months) \
+Technische Universität Dresden #h(1fr) 2024 (4 months) \
 
 == Teaching
 #chiline()
-
 === University of Cape Town
 - Introduction to programming (Lecturer) #h(1fr) 2024, 25 \
 - Network and Internet Security (Teaching Assistant) #h(1fr) 2024, 25 \
@@ -63,9 +64,8 @@ Master of Science in Computer Science #h(1fr) 2024 -- present \
 
 == Awards
 #chiline()
-
 === Scholarships
-- NRF Postgraduate Scholarship #h(1fr) 2025 \
+- National Research Foundation Postgraduate Scholarship #h(1fr) 2025 \
 - Exness Postgraduate Scholarship #h(1fr) 2024, 25 \
 - Merit-based scholarship for University of Cape Town #h(1fr) 2023\
 
@@ -74,7 +74,6 @@ Master of Science in Computer Science #h(1fr) 2024 -- present \
 
 == Publications
 #chiline()
-
 === 2025
 - Carr, L., Leisegang, N., Meyer, T. and Obiedkov, S., 2025, September. Rational Inference in Formal Concept Analysis. In International Joint Conference on Conceptual Knowledge Structures (pp. 325-341). Cham: Springer Nature Switzerland.
 
@@ -83,12 +82,5 @@ Master of Science in Computer Science #h(1fr) 2024 -- present \
 
 - Carr L, Chavula J. Deep Learning Classification for Encrypted Botnet Traffic: Optimising Model Performance and Resource Utilisation. InAnnual Conference of South African Institute of Computer Scientists and Information Technologists 2024 Jul 8 (pp. 3-29). Cham: Springer Nature Switzerland.
 
-== Research Stays
-#chiline()
-*Technische Universität Dresden* #h(1fr) 2024 (4 months) \
-Topic: Non-monotonic reasoning in Formal Concept Analysis
-
-*Technische Universität Dresden* #h(1fr) 2025 (3 months) \
-Topic: Non-monotonic reasoning in Formal Concept Analysis
 
 #lastupdated("September, 2025")
