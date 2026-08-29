@@ -2,7 +2,7 @@
     font-family: "TXLAB02mono";
     src: url("./TXLAB02mono.woff2") format("woff2");
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-display: swap;
 }
 
@@ -13,9 +13,9 @@
     --foreground-light: var(--blue);
     --foreground-dark: white;
     /* font-family: "TXLAB02mono", monospace; */
-    font-family: "Helvetica", monospace;
-    text-align: justify;
+    font-family: "helvetica", monospace;
     font-optical-sizing: auto;
+    font-size: 12px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -49,194 +49,104 @@
 }
 
 body {
-    margin: 10;
-    font-weight: 400;
-    font-size: 13px;
-    margin-left: 7%;
-    margin-right: 5%;
-}
-
-h1,
-h2 {
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 0;
-}
-
-header {
-    margin-top: 7%;
-    margin-bottom: 1em;
-    display: flex;
-    max-width: 90%;
-    width: 50em;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-
-#top {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#information h1 {
-    font-size: 15px;
-    margin-bottom: -0.5em;
-}
-
-#right {
-    padding-top: 2.75em;
-    margin-left: 1rlh;
-    display: flex;
-    flex-direction: column;
-}
-
-#right a {
-    margin-bottom: 0em;
-}
-
-#left p {
-    margin-bottom: 0em;
+    margin: 10rem 0 0 4rem;
 }
 
 main {
+    max-width: 64rem;
+    margin-left: 20rem;
+}
+
+#intro {
+    max-width: 45rem;
+}
+
+.intro-text > :first-child {
+    margin-top: 0;
+}
+
+.intro-text > :last-child {
+    margin-bottom: 0;
+}
+
+.profile {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    width: 15rem;
+}
+
+.portrait {
+    display: block;
     width: 100%;
-    max-width: 50em;
+    height: auto;
 }
 
-main h1 {
-    font-size: 11px;
+.profile p {
+    margin: 0.75rem 0 0;
 }
 
-a {
-    text-decoration: none;
+.profile-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.35rem;
+}
+
+.profile a {
     color: inherit;
 }
 
-a:hover {
-    text-decoration: underline;
+#research {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr) max-content;
+    column-gap: 1.5rem;
+    row-gap: 0.75rem;
+    align-items: start;
+    margin: 4rem 0 0;
+    max-width: 45rem;
 }
 
-.intro {
-    margin-bottom: 2em;
+#research h1 {
+    grid-column: 1 / -1;
+    margin: 0 0 0.75rem;
 }
 
-.section {
-    margin-bottom: 2em;
+#research > * {
+    min-width: 0;
 }
 
-.section-title {
+#research .research-column-heading {
     font-weight: 600;
-    font-size: 15px;
 }
 
-.row {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 0.25em;
+#research a {
+    color: inherit;
 }
 
-.col-1 {
-    flex: 0 0 auto;
-    min-width: 4em;
-    padding-right: 1em;
+h1 {
+    font-weight: 400;
+    font-size: 14px;
 }
 
-.col-4 {
-    flex: 0 0 auto;
-    min-width: 18em;
-    padding-right: 1em;
-}
-
-.col-2 {
-    flex: 1 1 auto;
-    text-align: left;
-    padding-right: 1em;
-}
-
-.col-3 {
-    flex: 0 0 auto;
-    text-align: right;
-}
-
-footer {
-    margin-top: 10vh;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     body {
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 10px;
+        margin: 4rem 1.5rem 0;
     }
 
-    header {
-        margin-top: 10%;
-        max-width: 100%;
+    #research {
+        grid-template-columns: 4.5rem minmax(0, 1fr) max-content;
+        column-gap: 1rem;
     }
+}
 
-    #top {
-        flex-direction: column;
-    }
-
-    #right {
-        padding-top: 0;
+@media (max-width: 800px) {
+    main {
         margin-left: 0;
-        margin-top: 0;
     }
 
-    #left a {
-        margin-bottom: 0;
-    }
-
-    .row {
-        flex-direction: column;
-        margin-bottom: 1.5em;
-    }
-
-    .col-1 {
-        min-width: unset;
-        padding-right: 0;
-        margin-bottom: 0.25em;
-        font-weight: bold;
-    }
-
-    .col-2 {
-        padding-right: 0;
-        margin-bottom: 0.25em;
-    }
-
-    .col-3 {
-        text-align: left;
-    }
-
-    .col-4 {
-        min-width: unset;
-        padding-right: 0;
-        margin-bottom: 0.5em;
-        font-weight: bold;
-    }
-
-    .section:first-of-type .row {
-        display: block;
-    }
-
-    .section:first-of-type .col-2,
-    .section:first-of-type .col-3 {
-        display: inline-block;
-        padding-right: 0;
-        margin-bottom: 0;
-    }
-
-    .section:first-of-type .col-2 {
-        margin-right: 1em;
-    }
-
-    .intro {
-        margin-bottom: 1.5em;
-    }
-
-    .section {
-        margin-bottom: 2.5em;
+    .profile {
+        position: static;
+        width: min(15rem, 100%);
+        margin-top: 2rem;
     }
 }
