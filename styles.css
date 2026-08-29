@@ -98,9 +98,9 @@ main {
 
 #research {
     display: grid;
-    grid-template-columns: 5rem minmax(0, 1fr) max-content;
+    grid-template-columns: 3.5rem minmax(0, 1fr) max-content;
     column-gap: 1.5rem;
-    row-gap: 0.75rem;
+    row-gap: 0.35rem;
     align-items: start;
     margin: 4rem 0 0;
     max-width: 45rem;
@@ -108,7 +108,7 @@ main {
 
 #research h1 {
     grid-column: 1 / -1;
-    margin: 0 0 0.75rem;
+    margin: 0 0 0.35rem;
 }
 
 #research > * {
@@ -134,7 +134,7 @@ h1 {
     }
 
     #research {
-        grid-template-columns: 4.5rem minmax(0, 1fr) max-content;
+        grid-template-columns: 3.5rem minmax(0, 1fr) max-content;
         column-gap: 1rem;
     }
 }
