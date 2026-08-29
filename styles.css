@@ -1,10 +1,19 @@
+@font-face {
+    font-family: "TXLAB02mono";
+    src: url("./TXLAB02mono.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
 :root {
     --blue: #0000a4;
     --background-light: #FFF;
     --background-dark: var(--blue);
     --foreground-light: var(--blue);
     --foreground-dark: white;
-    font-family: "Geist", sans-serif;
+    /* font-family: "TXLAB02mono", monospace; */
+    font-family: "Helvetica", monospace;
     text-align: justify;
     font-optical-sizing: auto;
 }
@@ -40,9 +49,9 @@
 }
 
 body {
-    margin: 0;
+    margin: 10;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 7%;
     margin-right: 5%;
 }
@@ -50,7 +59,7 @@ body {
 h1,
 h2 {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 0;
 }
 
