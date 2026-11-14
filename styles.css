@@ -62,6 +62,14 @@ main {
     margin-left: 20rem;
 }
 
+.header-links {
+    margin-bottom: 1rem;
+}
+
+.header-links p {
+    margin-bottom: 0rem;
+}
+
 #intro {
     max-width: 45rem;
 }
